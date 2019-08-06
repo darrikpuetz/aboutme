@@ -5,25 +5,65 @@ var name = prompt('Who are you?');
 alert('Welcome ' + name);
 console.log('Welcome ' + name);
 
-var place = prompt('Are you from Seattle (y or n?)');
+var language = prompt('Is C# my favorite language? (y or n)').toLowerCase();
 
-if (place === 'y') {
-alert('Home grown I see.');
+if (language === 'y') {
+alert('You are right!');
 }
 
 else {
-alert('Welcome to Seattle');
-}console.log('Location Seattle?' + place);
+alert('Nope, it is C# ');
+}console.log('User answer for language ' + language);
 
-var hobby = prompt('What do you like to do?');
+var state = prompt('Am I from Idaho (y or n)').toLowerCase();
 
-alert(hobby + ' sure sounds fun');
-console.log(hobby + ' sure sounds fun');
+if (state === 'n') {
+alert('You are correct! I am from Iowa');
+}
 
-var favoritePlace = prompt('Where is the one place you want to go?');
+else {
+alert('Nope, it is Iowa ');
+}console.log('User answer for state ' + state);
 
-alert(favoritePlace + ' is a wonderful place!');
-console.log(favoritePlace + ' is a wonderful place!');
+var pastHobby = prompt('Did I professionally bullride? (y or n)').toLowerCase();
 
-alert('Hello ' + name + ' , would you like to go ' + hobby + ' in ' + favoritePlace);
-console.log('Hello ' + name + ' , would you like to go ' + hobby + ' in ' + favoritePlace + ' ? ');
+if (pastHobby === 'y') {
+alert('You are right!');
+}
+
+else {
+alert('Nope, I surely did! #yeehaw ');
+}console.log('User answer for hobby' + pastHobby);
+
+var animal = prompt('Is my favorite animal a turtle? (y or n)').toLowerCase();
+
+if (animal === 'n') {
+alert('You are right! It is a platypus');
+}
+
+else {
+alert('Nope, It is a platypus ');
+}console.log('User answer for animal ' + animal);
+
+var daughter = prompt('I have one kid? (y or n)').toLowerCase();
+
+if (daughter === 'y') {
+alert('You are right!');
+}
+
+else {
+alert('Nope, I definately do. ');
+}console.log('User answer for daughter' + animal);
+
+// var hobby = prompt('What do you like to do?');
+
+// alert(hobby + ' sure sounds fun');
+// console.log(hobby + ' sure sounds fun');
+
+// var favoritePlace = prompt('Where is the one place you want to go?');
+
+// alert(favoritePlace + ' is a wonderful place!');
+// console.log(favoritePlace + ' is a wonderful place!');
+
+// alert('Hello ' + name + ' , would you like to go ' + hobby + ' in ' + favoritePlace);
+// console.log('Hello ' + name + ' , would you like to go ' + hobby + ' in ' + favoritePlace + ' ? ');

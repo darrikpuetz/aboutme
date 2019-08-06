@@ -2,14 +2,14 @@ body{
     margin: 0;
     padding: 0;
     font-family: helvetica;
-    background-color: #blue;
+    background-color: #13314D;
 }
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #121C25;
   }
   
   li {
@@ -20,19 +20,21 @@ ul {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 20px 18px;
     text-decoration: none;
   }
 
   .active {
-    background-color: #4CAF50;
+    background-color: ivory;
   }
 
   li a:hover {
-    background-color: #111;
+    background-color: #2D587B;
   }
+
+
 header{
-    background-color: #3E3836;
+    background-color: #121C25;
     height: 100px;
 }
 h1{
@@ -40,14 +42,14 @@ h1{
     float: left;
     margin-left: 20px;
     margin-right: 50px;
-    color: white;
-    text-shadow: 1px 1px 1px 1px #562011;
+    color: ivory;
+    text-shadow: 1px 1px 1px 1px #13314D;
 }
 main{
-    width: 960px;
+    width: 1000px;
     min-height: 700px;
-    margin: 30px auto;
-    background-color: #562011;
+    margin: 20px auto;
+    background-color: #9CB1BF;
 }
     
 main li:last-child{
@@ -60,7 +62,3 @@ footer{
 p{
     padding: 20px;
 }
-
-#grad {
-    background-image: linear-gradient(to bottom right, rgba(15, 3, 122, 0.185), rgb(31, 86, 150));
-  }
