@@ -3,7 +3,7 @@
 var name = prompt('Who are you?');
 
 alert('Welcome ' + name);
-console.log('Welcome ' + name);
+console.log('Welcome ' + name + '!');
 
 var language = prompt('Is C# my favorite language? (y or n)').toLowerCase();
 
@@ -11,7 +11,7 @@ if (language === 'y') {
 alert('You are right!');
 }
 
-else {
+else if(language === 'n'){
 alert('Nope, it is C# ');
 }console.log('User answer for language ' + language);
 
@@ -21,7 +21,7 @@ if (state === 'n') {
 alert('You are correct! I am from Iowa');
 }
 
-else {
+else if(state === 'n'){
 alert('Nope, it is Iowa ');
 }console.log('User answer for state ' + state);
 
@@ -31,7 +31,7 @@ if (pastHobby === 'y') {
 alert('You are right!');
 }
 
-else {
+else if(pastHobby === 'n'){
 alert('Nope, I surely did! #yeehaw ');
 }console.log('User answer for hobby' + pastHobby);
 
@@ -41,7 +41,7 @@ if (animal === 'n') {
 alert('You are right! It is a platypus');
 }
 
-else {
+else if (animal === 'n') {
 alert('Nope, It is a platypus ');
 }console.log('User answer for animal ' + animal);
 
@@ -51,7 +51,7 @@ if (daughter === 'y') {
 alert('You are right!');
 }
 
-else {
+else if (daughter === 'n'){
 alert('Nope, I definately do. ');
 }console.log('User answer for daughter' + animal);
 
