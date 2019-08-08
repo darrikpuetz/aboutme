@@ -1,69 +1,93 @@
 'use strict';
 
-var name = prompt('Who are you?');
+var correctNum = 0;
 
-alert('Welcome ' + name);
-console.log('Welcome ' + name + '!');
+var nameUser = prompt('Who are you?');
+
+alert('Welcome ' + nameUser);
+console.log('Welcome ' + nameUser + '!');
 
 var language = prompt('Is C# my favorite language? (y or n)').toLowerCase();
 
 if (language === 'y') {
-alert('You are right!');
+  alert('You are right!');
+  correctNum++;
 }
 
 else if(language === 'n'){
-alert('Nope, it is C# ');
+  alert('Nope, it is C# ');
 }console.log('User answer for language ' + language);
 
 var state = prompt('Am I from Idaho (y or n)').toLowerCase();
 
 if (state === 'n') {
-alert('You are correct! I am from Iowa');
+  alert('You are correct! I am from Iowa');
+  correctNum++;
 }
 
 else if(state === 'n'){
-alert('Nope, it is Iowa ');
+  alert('Nope, it is Iowa ');
 }console.log('User answer for state ' + state);
 
 var pastHobby = prompt('Did I professionally bullride? (y or n)').toLowerCase();
 
 if (pastHobby === 'y') {
-alert('You are right!');
+  alert('You are right!');
+  correctNum++;
 }
 
 else if(pastHobby === 'n'){
-alert('Nope, I surely did! #yeehaw ');
+  alert('Nope, I surely did! #yeehaw ');
 }console.log('User answer for hobby' + pastHobby);
 
 var animal = prompt('Is my favorite animal a turtle? (y or n)').toLowerCase();
 
 if (animal === 'n') {
-alert('You are right! It is a platypus');
+  alert('You are right! It is a platypus');
+  correctNum++;
 }
 
 else if (animal === 'n') {
-alert('Nope, It is a platypus ');
+  alert('Nope, It is a platypus ');
 }console.log('User answer for animal ' + animal);
 
 var daughter = prompt('I have one kid? (y or n)').toLowerCase();
 
 if (daughter === 'y') {
-alert('You are right!');
+  alert('You are right!');
+  correctNum++;
 }
 
 else if (daughter === 'n'){
-alert('Nope, I definately do. ');
+  alert('Nope, I definately do. ');
 }console.log('User answer for daughter' + animal);
 
-// var hobby = prompt('What do you like to do?');
+var favoriteColor = prompt('What is my favorite color?').toLowerCase();
 
-// alert(hobby + ' sure sounds fun');
-// console.log(hobby + ' sure sounds fun');
+while (favoriteColor !== 'orange') {
+  favoriteColor = prompt('What is my favorite color?');
+}
 
-// var favoritePlace = prompt('Where is the one place you want to go?');
+if (favoriteColor === 'orange');
 
-// alert(favoritePlace + ' is a wonderful place!');
-// console.log(favoritePlace + ' is a wonderful place!');
+alert('You know my favorite color. Welcome.');
+console.log('Finished color');
 
-// alert('Hello ' + name + ' , would you like to go ' + hobby + ' in ' + favoritePlace);
-// console.log('Hello ' + name + ' , would you like to go ' + hobby + ' in ' + favoritePlace + ' ? ');
+for( var i = 0; i <= 6; i++ ) {
+  var whichCountry = prompt('What country have I been to besides the United States?');
+  var country = ['korea', 'germany', 'syria', 'afghanistan','ireland', 'england'];
+
+  if(country[i] === whichCountry.toLowerCase()){
+    alert('You got one right! I have been to ' + country);
+    i = 7;
+    correctNum++;
+    break;
+  }console.log('Number of attempts' + i );
+}
+if (i === 6){
+  alert('Korea , Germany , Syria , Afghanistan , Ireland , England');
+}
+else {
+  alert('Wrong!');
+}
+alert('You got ' + correctNum + ' right ' + nameUser);
