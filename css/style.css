@@ -10,6 +10,9 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #121C25;
+    border-radius: 25px 255x 25px 25px;
+   
+   
   }
   
   li {
@@ -30,6 +33,7 @@ ul {
 
   li a:hover {
     background-color: #2D587B;
+    border-radius: 25px 255x 25px 25px;
   }
 
 
