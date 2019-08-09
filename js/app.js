@@ -1,5 +1,23 @@
 'use strict';
 
+function yesNo( answer ){
+  return answer;
+}
+
+var answer = prompt('Is C# my favorite language? (y or n)').toLowerCase();
+
+yesNo();
+
+if (answer === ('y')){
+  alert('You are right');
+  correctNum ++; 
+}
+
+else if (answer === ('n')){
+  alert('Nope, it is C#');
+}
+
+
 var correctNum = 0;
 
 var nameUser = prompt('Who are you?');
@@ -73,21 +91,48 @@ if (favoriteColor === 'orange');
 alert('You know my favorite color. Welcome.');
 console.log('Finished color');
 
-for( var i = 0; i <= 6; i++ ) {
-  var whichCountry = prompt('What country have I been to besides the United States?');
-  var country = ['korea', 'germany', 'syria', 'afghanistan','ireland', 'england'];
+// for( var i = 0; i <= 6; i++ ) {
+//   var whichCountry = prompt('What country have I been to besides the United States?');
+//   var country = ['korea', 'germany', 'syria', 'afghanistan','ireland', 'england'];
 
-  if(country[i] === whichCountry.toLowerCase()){
-    alert('You got one right! I have been to ' + country);
-    i = 7;
-    correctNum++;
-    break;
-  }console.log('Number of attempts' + i );
+//   if(country[i] === whichCountry.toLowerCase()){
+//     alert('You got one right! I have been to ' + country);
+//     i = 7;
+//     correctNum++;
+//     break;
+//   }console.log('Number of attempts' + i );
+// }
+// if (i === 6){
+//   alert('Korea , Germany , Syria , Afghanistan , Ireland , England');
+// }
+// else {
+//   alert('Wrong!');
+// }
+// alert('You got ' + correctNum + ' right ' + nameUser);
+
+var whichCountry = ['korea', 'germany', 'syria', 'afghanistan','ireland', 'england'];
+var countryGuess = false;
+var numCountryGuess = 1;
+
+while (countryGuess === false && numCountryGuess <= 7) {
+  var guessCountry = prompt('What country have I been to besides the United States?');
+
+  for (var i = 0; i < whichCountry.length; i++) {
+
+
+    if(guessCountry.toLowerCase() === whichCountry[i]){
+      alert('You got one right! I have been to ' + whichCountry);
+      correctNum++;
+      console.log('Correct Country');
+      countryGuess = true;
+      break;
+    }
+  }
+
+  if (!countryGuess){
+    alert('Wrong!');
+    console.log('never guessed correctly');
+  }
+
+  numCountryGuess++;
 }
-if (i === 6){
-  alert('Korea , Germany , Syria , Afghanistan , Ireland , England');
-}
-else {
-  alert('Wrong!');
-}
-alert('You got ' + correctNum + ' right ' + nameUser);
